@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="gachaWord" type="String"/>
+    </data>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Black"
+            android:orientation="vertical">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleX="1.2"
+                android:src="@drawable/title_background"/>
+
+        <TextView
+                android:id="@+id/gacha_start_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:text="ガチャを回す"
+                android:textColor="@color/White"
+                android:textSize="40dp"
+                android:text="@{gachaWord}"
+        />
+
+        <ImageView
+                android:id="@+id/gacha_start_button"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/button02_05"
+                android:layout_gravity="center"
+        />
+    </FrameLayout>
+</layout>
